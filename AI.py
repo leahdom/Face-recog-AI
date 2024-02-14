@@ -11,8 +11,8 @@ from datetime import datetime
 video_capture = cv2.VideoCapture(0)
 
 ''' creates images and converts them '''
-APJ_image = face_recognition.load_image_file("kavya.jpg")
-APJ_encoding = face_recognition.face_encodings(kavya_image)[0]
+APJ_image = face_recognition.load_image_file("apj.jpg")
+APJ_encoding = face_recognition.face_encodings(APJ_image)[0]
 
 
 
