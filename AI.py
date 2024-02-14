@@ -14,16 +14,19 @@ video_capture = cv2.VideoCapture(0)
 APJ_image = face_recognition.load_image_file("apj.jpg")
 APJ_encoding = face_recognition.face_encodings(APJ_image)[0]
 
-
+Ambedhkar_image = face_recognition.load_image_file("ambedhkar.jpg")
+Ambedhkar_encoding = face_recognition.load_image_file("Ambedhkar_image)[0]
 
 ''' list of known faces '''
 known_face_encoding = [
-APJ_encoding
+APJ_encoding,
+Ambedhkar_encoding
 ]
 
 ''' list of known names '''
 known_face_names = [
-"Dr.A.P.J.Abdul Kalam
+"Dr.A.P.J.Abdul Kalam",
+"Dr.B.R.Ambedhkar"
 ]
 
 students = known_face_names.copy()
