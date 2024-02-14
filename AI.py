@@ -11,39 +11,19 @@ from datetime import datetime
 video_capture = cv2.VideoCapture(0)
 
 ''' creates images and converts them '''
-kavya_image = face_recognition.load_image_file("kavya.jpg")
-kavya_encoding = face_recognition.face_encodings(kavya_image)[0]
-
-dhinesh_image = face_recognition.load_image_file("dhinesh.jpg")
-dhinesh_encoding = face_recognition.face_encodings(dhinesh_image)[0]
-
-mohnish_image = face_recognition.load_image_file("mohnish.jpg")
-mohnish_encoding = face_recognition.face_encodings(mohnish_image)[0]
-
-prabha_image = face_recognition.load_image_file("prabha.jpg")
-prabha_encoding = face_recognition.face_encodings(prabha_image)[0]
-
-shanmu_image = face_recognition.load_image_file("shanmu.jpg")
-shanmu_encoding = face_recognition.face_encodings(shanmu_image)[0]
+APJ_image = face_recognition.load_image_file("kavya.jpg")
+APJ_encoding = face_recognition.face_encodings(kavya_image)[0]
 
 
 
 ''' list of known faces '''
 known_face_encoding = [
-kavya_encoding,
-dhinesh_encoding,
-mohnish_encoding,
-prabha_encoding,
-shanmu_encoding
+APJ_encoding
 ]
 
 ''' list of known names '''
 known_face_names = [
-"Kavya",
-"Dhinesh",
-"Mohnish Swarup",
-"Prabha",
-"Shanmuga Priya",
+"Dr.A.P.J.Abdul Kalam
 ]
 
 students = known_face_names.copy()
